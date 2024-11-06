@@ -322,9 +322,18 @@
             <!-- ====== Booking ====== -->
             <section id="booking" class="ptb">
                <div class="container wrapper-booking flex-row">
-                  <div class="booking-img">
-                     <img src="images/booking.png" alt="">
-                  </div>
+   <div class="booking-calendar">
+      <input type="text" id="calendar" placeholder="Selecciona una fecha" />
+   </div>
+</div>
+
+<script>
+   flatpickr("#calendar", {
+      enableTime: true, // para permitir selección de hora
+      dateFormat: "Y-m-d H:i", // formato de fecha y hora
+      minDate: "today", // deshabilita fechas pasadas
+   });
+</script>
                   <div class="booking-content">
                      <div class="container wrapper-title">
                         <span class="suptitle">Reservas</span>
