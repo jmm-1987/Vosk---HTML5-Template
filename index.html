@@ -80,7 +80,7 @@
                   <div class="header-content-link">
                      <h1>BARBERS sHOP <br> </h1>
                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, pariatur? Veniam neque dolor doloribus eaque exercitationem architecto at illum sequi suscipit. Minus quod quas at officiis adipisci asperiores modi reiciendis.</p>
-                     <a id="booking-link" class="btn" href="#booking">Make Appointment</a>
+                     <a id="booking-link" class="btn" href="#booking">Reserva online</a>
                   </div>
                   <!--/.header-content-link-->
                </div>
@@ -322,50 +322,42 @@
             <!-- ====== End Team ====== -->
 
             <!-- ====== Booking ====== -->
-            <section id="booking" class="ptb">
-               <div class="container wrapper-booking flex-row">
-   <div class="booking-calendar">
-      <input type="text" id="calendar" placeholder="Selecciona una fecha" />
-   </div>
-</div>
 
-<script>
-   flatpickr("#calendar", {
-      enableTime: true, // para permitir selección de hora
-      dateFormat: "Y-m-d H:i", // formato de fecha y hora
-      minDate: "today", // deshabilita fechas pasadas
-   });
-</script>
-                  <div class="booking-content">
-                     <div class="container wrapper-title">
-                        <span class="suptitle">Reservas</span>
-                        <h2>Reserva tu cita</h2>
-                     </div>
-                     <!--/.wrapper-title-->
-                     <form method="POST">
-                        <div class="wrapper-input flex-row">
-                           <input type="text" name="name" placeholder="Name">
-                           <input type="text" name="lastname" placeholder="Last Name">
-                        </div>
-                        <!--/.wrapper-input-->
-                        <div class="wrapper-input flex-row">
-                           <input type="text" name="phone" placeholder="Phone">
-                           <input type="text" name="email" placeholder="Email">
-                        </div>
-                        <!--/.wrapper-input-->
-                        <div class="wrapper-input flex-row">
-                           <input type="text" name="date" placeholder="mm-dd-yy">
-                           <input type="text" name="time" placeholder="12:00">
-                        </div>
-                        <!--/.wrapper-input-->
-                        <button class="btn" id="sendbook" type="submit">Make Appointment</button>
-                        <p class="res-booking"></p>
-                     </form>
-                  </div>
+            <div class="container wrapper-booking flex-row">
+               <div class="booking-img">
+                  <img src="images/booking.png" alt="">
                </div>
-               <!--/.wrapper-booking-->
-            </section>
+               <div class="booking-content">
+                  <div class="container wrapper-title">
+                     <span class="suptitle">Booking</span>
+                     <h2>Make Appointment</h2>
+                  </div>
+                  <!--/.wrapper-title-->
+                  <form method="POST">
+                     <div class="wrapper-input flex-row">
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="text" name="lastname" placeholder="Last Name">
+                     </div>
+                     <!--/.wrapper-input-->
+                     <div class="wrapper-input flex-row">
+                        <input type="text" name="phone" placeholder="Phone">
+                        <input type="text" name="email" placeholder="Email">
+                     </div>
+                     <!--/.wrapper-input-->
+                     <div class="wrapper-input flex-row">
+                        <input type="text" name="date" placeholder="mm-dd-yy">
+                        <input type="text" name="time" placeholder="12:00">
+                     </div>
+                     <!--/.wrapper-input-->
+                     <button class="btn" id="sendbook" type="submit">Make Appointment</button>
+                     <p class="res-booking"></p>
+                  </form>
+               </div>
+            </div>
+            <!--/.wrapper-booking-->
+         
             <!-- ====== End Booking ====== -->
+
 
             <!-- ====== Gallery ====== -->
             <section id="gallery" class="ptb">
